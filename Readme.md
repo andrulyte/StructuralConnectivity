@@ -34,7 +34,11 @@ This repository contains scripts for computing diffusion MRI connectivity matric
 
 ## Folder Descriptions
 ### `Connectivity_matrices/`
-Contains scripts for generating and filtering diffusion MRI-based connectivity matrices using the SENSAAS atlas. These scripts are used to extract structural connectivity information and store it in `.npy` format for further processing.
+This folder contains scripts for generating diffusion MRI-based connectivity matrices using the AICHA atlas. The pipeline involves:
+
+1. Generating connectivity matrices and saving them in .npy format.
+2. Extracting 64 supramodal regions based on the SENSAAS parcellation.
+3. Saving the processed connectivity data in a structured .mat file for further analysis.
 
 ### `ConnectivitySums/`
 Includes scripts for computing inter- and intra-hemispheric connectivity sums and running MANOVA analysis on extracted connectivity metrics. These analyses help quantify how hemispheric connectivity differs across groups.
